@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    background-color: black;
+    color: cadetblue;
+}
+@media  screen and (max-width:300px) {
+    table{
+        width: 100%;
+        
+    }
+}
+table{
+    /* width: 100%; */
+    outline-color: blanchedalmond;
+    border-radius: 4px 5px 4px 5px;
+    background-color: rgb(19, 15, 15);
+    box-shadow: 3px 3px 2px rgb(70, 69, 69);
+}
+input[type="button"]{
+    background-color: rgb(68, 67, 67);
+    color: white;
+    width: 100%;
+}
+input[type="text"]{
+    width: 96%;
+    background-color: rgb(174, 252, 232);
+  font-weight: bolder;
+  color: rgb(34, 33, 33);
+  font-style: inherit;
+}
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal1.css">
+    <script src="cal1.js"></script>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <td colspan="3"><input type="text" id="result"></td>
+            <td><input type="button" value="C" onclick="clr()"> </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onclick="dis('1'), border='red solid 1px'"></td>
+            <td><input type="button" value="2" onclick="dis('2')"></td>
+            <td><input type="button" value="3" onclick="dis('3')"></td>
+            <td><input type="button" value="+" onclick="dis('+')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onclick="dis('4')"></td>
+            <td><input type="button" value="5" onclick="dis('5')"></td>
+            <td><input type="button" value="6" onclick="dis('6')"></td>
+            <td><input type="button" value="-" onclick="dis('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onclick="dis('7')"></td>
+            <td><input type="button" value="8" onclick="dis('8')"></td>
+            <td><input type="button" value="9" onclick="dis('9')"></td>
+            <td><input type="button" value="/" onclick="dis('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="0" onclick="dis('0')"></td>
+            <td><input type="button" value="." onclick="dis('.')"></td>
+            <td><input type="button" value="=" onclick="solve()"></td>
+            <td><input type="button" value="*" onclick="dis('*')"></td>
+        </tr>
+
+    </table>
+</body>
+
+</html>
+    <script>
+        // result board to show the value
+function dis(val){
+    document.getElementById("result").value+=val
+}
+
+// functionto eval the value
+function solve(){
+    let x = document.getElementById("result").value
+    let y = eval(x);
+    document.getElementById("result").value=y;
+}
+// functionn to clear the result
+function clr(){
+    document.getElementById("result").value =" ";
+}
+
+    </script>
+</body>
+</html>
