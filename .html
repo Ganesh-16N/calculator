@@ -4,52 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-    background-color: black;
-    color: cadetblue;
-}
-@media  screen and (max-width:300px) {
-    table{
-        width: 100%;
-        
-    }
-}
-table{
-    /* width: 100%; */
-    outline-color: blanchedalmond;
-    border-radius: 4px 5px 4px 5px;
-    background-color: rgb(19, 15, 15);
-    box-shadow: 3px 3px 2px rgb(70, 69, 69);
-}
-input[type="button"]{
-    background-color: rgb(68, 67, 67);
-    color: white;
-    width: 100%;
-}
-input[type="text"]{
-    width: 96%;
-    background-color: rgb(174, 252, 232);
-  font-weight: bolder;
-  color: rgb(34, 33, 33);
-  font-style: inherit;
-}
-    </style>
+    <title>Calculator</title>
+    <link rel="stylesheet" href=".css">
 </head>
-<body>
-    <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="cal1.css">
-    <script src="cal1.js"></script>
-</head>
-
 <body>
     <table border="1">
         <tr>
@@ -82,26 +39,8 @@ input[type="text"]{
         </tr>
 
     </table>
+    
+    <script src=".js"></script>
 </body>
 
-</html>
-    <script>
-        // result board to show the value
-function dis(val){
-    document.getElementById("result").value+=val
-}
-
-// functionto eval the value
-function solve(){
-    let x = document.getElementById("result").value
-    let y = eval(x);
-    document.getElementById("result").value=y;
-}
-// functionn to clear the result
-function clr(){
-    document.getElementById("result").value =" ";
-}
-
-    </script>
-</body>
 </html>
