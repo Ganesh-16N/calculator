@@ -1,0 +1,29 @@
+*{
+    background-color: black;
+    color: cadetblue;
+}
+@media  screen and (max-width:300px) {
+    table{
+        width: 100%;
+        
+    }
+}
+table{
+    /* width: 100%; */
+    outline-color: blanchedalmond;
+    border-radius: 4px 5px 4px 5px;
+    background-color: rgb(19, 15, 15);
+    box-shadow: 3px 3px 2px rgb(70, 69, 69);
+}
+input[type="button"]{
+    background-color: rgb(68, 67, 67);
+    color: white;
+    width: 100%;
+}
+input[type="text"]{
+    width: 96%;
+    background-color: rgb(174, 252, 232);
+  font-weight: bolder;
+  color: rgb(34, 33, 33);
+  font-style: inherit;
+}
