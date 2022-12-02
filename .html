@@ -8,13 +8,14 @@
     <link rel="stylesheet" href=".css">
 </head>
 <body>
-    <table border="1">
-        <tr>
+    <div id="heading">CALCULATOR</div>
+    <table >
+        <tr id="show">
             <td colspan="3"><input type="text" id="result"></td>
             <td><input type="button" value="C" onclick="clr()"> </td>
         </tr>
         <tr>
-            <td><input type="button" value="1" onclick="dis('1'), border='red solid 1px'"></td>
+            <td><input type="button" value="1" onclick="dis('1')"></td>
             <td><input type="button" value="2" onclick="dis('2')"></td>
             <td><input type="button" value="3" onclick="dis('3')"></td>
             <td><input type="button" value="+" onclick="dis('+')"></td>
